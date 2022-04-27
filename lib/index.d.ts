@@ -1,6 +1,6 @@
-import multer = require('multer');
-import { PredefinedAcl, StorageOptions } from '@google-cloud/storage';
-import { Request } from 'express';
+import { PredefinedAcl, StorageOptions } from "@google-cloud/storage";
+import multer from "multer";
+import { Request } from "express";
 export declare type MulterGoogleCloudStorageOptions = {
     acl?: PredefinedAcl;
     bucket?: string;
