@@ -121,17 +121,17 @@ export default class MulterGoogleCloudStorage implements multer.StorageEngine {
       );
     }
 
-    if (!opts.projectId) {
-      throw new Error(
-        "You have to specify project id for Google Cloud Storage to work."
-      );
-    }
+    // if (!opts.projectId) {
+    //   throw new Error(
+    //     "You have to specify project id for Google Cloud Storage to work."
+    //   );
+    // }
 
-    if (!opts.keyFilename && !opts.credentials) {
-      throw new Error(
-        "You have to specify credentials key file or credentials object, for Google Cloud Storage to work."
-      );
-    }
+    // if (!opts.keyFilename && !opts.credentials) {
+    //   throw new Error(
+    //     "You have to specify credentials key file or credentials object, for Google Cloud Storage to work."
+    //   );
+    // }
 
     this.gcsStorage = new Storage({
       projectId: opts.projectId,
